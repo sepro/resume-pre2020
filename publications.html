@@ -1,0 +1,15 @@
+---
+layout: default
+title: Publications Sebastian Proost, PhD
+---
+
+<div id="publications">
+  <h1>Publications</h1>
+  <ul class="cv_list">
+	{% for p in site.data.publications %}
+		  <li>
+			{% include paper.html p=p %}
+		  </li> 
+	{% endfor %}
+  </ul>
+</div>
