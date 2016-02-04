@@ -1,13 +1,15 @@
 ---
 layout: default
-title: Your New Jekyll Site
+title: CV Sebastian Proost, PhD
 ---
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
+<div id="publications">
+  <h1>Publications</h1>
+  <ul class="cv_list">
+	{% for p in site.data.publications %}
+	  <li>
+		  {{ p.Authors }}, <strong>{{ p.Title }}</strong>, <em>{{ p.Publication }}</em> ({{ p.Year }})
+	  </li>
+	{% endfor %}
   </ul>
 </div>
