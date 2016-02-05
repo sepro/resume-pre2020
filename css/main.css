@@ -121,6 +121,25 @@ a:visited { color: #a0a; }
   border: 0;
 }
 
+ul
+{
+    list-style-type: none;
+}
+
+li {
+	margin-bottom: 7px;
+}
+
+div.timeline {
+	float: left;
+	width:200px;
+	height:20px;
+}
+
+div.timeline + div {
+	margin-left: 205px;
+}
+
 /*****************************************************************************/
 /*
 /* Publications
@@ -130,3 +149,4 @@ a:visited { color: #a0a; }
 strong.author {
 	color:#e68a00
 }
+
