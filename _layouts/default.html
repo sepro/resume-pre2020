@@ -41,5 +41,42 @@
         </div>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/pablo.min.js"></script>
+	<script>
+		$(function() {
+			var timeline_width = 200;
+			var timeline_height = 20;
+			$( ".timeline" ).each(function( ) {
+				var dataMin = $( this ).attr("data-min");
+				var dataMax = $( this ).attr("data-max");
+				var dataValue = $( this ).attr("data-value");
+				
+				var step = (timeline_width-10)/(dataMax - dataMin);
+				var pos = step * (dataValue - dataMin);
+				
+				var svg = Pablo($( this )).svg({
+					width: timeline_width,
+					height: timeline_height
+					});
+				
+				svg.line({  
+					x1:5,
+                    y1:timeline_height/2,
+                    x2:timeline_width-5,
+                    y2:timeline_height/2,
+                    stroke: '#BBB',
+                    'stroke-width': 0.75})
+				
+				svg.circle({
+					cx: pos+5,
+					cy: timeline_height/2,
+					r: 4,
+					fill:  '#e68a00',
+					stroke:'#060',
+					'stroke-width': 0});
+				
+				console.log( dataValue );
+			});
+		});
+	</script>
     </body>
 </html>

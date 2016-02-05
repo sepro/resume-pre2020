@@ -1,1 +1,1 @@
-{{ p.Authors | replace:'S. Proost','<strong class="author">S. Proost</strong>' }}, <strong>{{ p.Title }}</strong>, <em>{{ p.Journal }}</em> ({{ p.Year }}) <a href="http://www.ncbi.nlm.nih.gov/pubmed/{{ p.PMID }}" class="pubmed_link">pubmed</a>
+<span class="timeline" data-min=2001 data-max=2016 data-value={{ p.Year }}></span>{{ p.Authors | replace:'S. Proost','<strong class="author">S. Proost</strong>' }}, <strong>{{ p.Title }}</strong>, <em>{{ p.Journal }}</em> ({{ p.Year }}) <a href="http://www.ncbi.nlm.nih.gov/pubmed/{{ p.PMID }}" class="pubmed_link">pubmed</a>
