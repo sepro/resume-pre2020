@@ -8,8 +8,8 @@ title: CV Sebastian Proost, PhD
 <li><div class="timerange" data-min="2008" data-max="2017" data-start="2013" data-stop="2015"></div><div>test</div></li>
 </ul>
 <div id="publications">
-  <h1>Publications <small>(Selection)</small></h1>
-  <a href="publications.html">Full list</a>
+  <h1>Selected Publications <small>(<a href="publications.html">Full list</a>)</small></h1>
+  {% include citations.html %}
   <ul class="cv_list">
 	{% for p in site.data.publications %}
 		{% if p.Selected == "1" %}
