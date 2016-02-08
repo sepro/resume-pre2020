@@ -13,6 +13,28 @@ ul.cv_list > li {
 	margin-bottom: 7px;
 }
 
+h1 {
+	font-size: 18px;
+	
+}
+
+h2 {
+	font-size: 16px;
+	
+}
+
+.toggle-button {
+	text-decoration: underline;
+	cursor:pointer;
+}
+ul.cv_list > li.toggle-off {
+	display: none;
+}
+
+ul.cv_list > li.toggle-on {
+	display: visible;
+}
+
 /*****************************************************************************/
 /*
 /* Publications
