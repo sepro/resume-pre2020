@@ -13,16 +13,6 @@ ul.cv_list > li {
 	margin-bottom: 7px;
 }
 
-div.timeline, div.timerange {
-	float: left;
-	width:200px;
-	height:20px;
-}
-
-div.timeline + div, div.timerange + div {
-	margin-left: 205px;
-}
-
 /*****************************************************************************/
 /*
 /* Publications

@@ -1,4 +1,4 @@
 name: SePro, CV
 markdown: redcarpet
-highlighter: pygments
+highlighter: rouge
 encoding: utf-8

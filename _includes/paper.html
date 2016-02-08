@@ -1,1 +1,4 @@
-<div class="timeline" data-min=2008 data-max=2017 data-value={{ p.Year }}></div><div>{{ p.Authors | replace:'S. Proost','<strong class="author">S. Proost</strong>' }}, <strong>{{ p.Title }}</strong>, <em>{{ p.Journal }}</em> ({{ p.Year }}) <a href="http://www.ncbi.nlm.nih.gov/pubmed/{{ p.PMID }}" class="badge pubmed_link">pubmed</a></div>
+<div class="row">
+	<div class="timeline col-lg-3 col-md-3 col-sm-4  hidden-xs" data-min=2008 data-max=2017 data-value={{ p.Year }}></div>
+	<div class="col-lg-9 col-md-9 col-sm-8">{{ p.Authors | replace:'S. Proost','<strong class="author">S. Proost</strong>' }}, <strong>{{ p.Title }}</strong>, <em>{{ p.Journal }}</em> ({{ p.Year }}) <a href="http://www.ncbi.nlm.nih.gov/pubmed/{{ p.PMID }}" class="badge pubmed_link">pubmed</a></div>
+</div>

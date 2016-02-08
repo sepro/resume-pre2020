@@ -3,7 +3,18 @@ layout: default
 title: CV Sebastian Proost, PhD
 ---
 
-
+<div id="training">
+  <h1>Selected Training <small>(<a href="training.html">Full list</a>)</small></h1>
+  <ul class="cv_list">
+	{% for t in site.data.training %}
+		{% if t.Selected == "1" %}
+		  <li>
+			{% include training.html t=t %}
+		  </li>
+		{% endif %}  
+	{% endfor %}
+  </ul>
+</div>
 
 <div id="publications">
   <h1>Selected Publications <small>(<a href="publications.html">Full list</a>)</small></h1>

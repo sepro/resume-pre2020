@@ -1,0 +1,8 @@
+<div class="row">
+	{% if t.YearStop %}
+	<div class="timerange col-lg-3 col-md-3 col-sm-4  hidden-xs" data-min=2008 data-max=2017 data-start={{ t.Year }}  data-stop={{ t.YearStop }}></div>
+	{% else %}
+	<div class="timeline col-lg-3 col-md-3 col-sm-4  hidden-xs" data-min=2008 data-max=2017 data-value={{ t.Year }}></div>
+	{% endif %}
+	<div class="col-lg-9 col-md-9 col-sm-8"><strong>{{ t.Name }}</strong> (by {{ t.Teacher }}), {{ t.Date }}, {{ t.Year }}. {{ t.City }}, {{ t.Country }}</div>
+</div>
