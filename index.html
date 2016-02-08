@@ -16,6 +16,19 @@ title: CV Sebastian Proost, PhD
   </ul>
 </div>
 
+<div id="conferences">
+  <h1>Selected Conferences <small>(<a href="conferences.html">Full list</a>)</small></h1>
+  <ul class="cv_list">
+	{% for c in site.data.conferences %}
+		{% if c.Selected == "1" %}
+		  <li>
+			{% include conference.html c=c %}
+		  </li>
+		{% endif %}  
+	{% endfor %}
+  </ul>
+</div>
+
 <div id="publications">
   <h1>Selected Publications <small>(<a href="publications.html">Full list</a>)</small></h1>
   {% include citations.html %}
