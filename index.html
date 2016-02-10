@@ -5,16 +5,14 @@ title: CV Sebastian Proost, PhD
 <div id="header">
 	<div class="row">
 	<div class="col-sm-3"><img class="profile" src="img/sepro_bw_small.jpg"/></div>
-	<div class="col-sm-6"><h1 class="name">Sebastian Proost, PhD</h1><h2>Bioinformatician, data analyst and web developer</h2></div>
-	<div class="col-sm-3">
-		<ul class="header-list pull-right">
+	<div class="col-sm-9"><h1 class="name">Sebastian Proost, PhD</h1><h2>Bioinformatician, data analyst and web developer</h2>
+			<ul class="header-list list-inline">
 			<li><a href="http://www.sebastianproost.be">www.sebastianproost.be <i class="fa fa-globe"></i></a></li>
 			<li><a href="https://github.com/sepro">github.com/sepro <i class="fa fa-github-alt"></i></a></li>
 			<li><a href="https://www.linkedin.com/in/sebastian-proost-581a6a88">Linkedin <i class="fa fa-linkedin-square"></i></a></li>
-			<li><a href="#">email <i class="fa fa-github-alt"></i></a></li>
+			<li><a href="mailto:&#115;&#101;&#098;&#097;&#115;&#116;&#105;&#097;&#110;&#046;&#112;&#114;&#111;&#111;&#115;&#116;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">&#115;&#101;&#098;&#097;&#115;&#116;&#105;&#097;&#110;&#046;&#112;&#114;&#111;&#111;&#115;&#116;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109; <i class="fa fa-envelope"></i></a></li>
 		</ul>
 	</div>
-
 	</div>
 </div>
 <hr />
@@ -41,9 +39,26 @@ title: CV Sebastian Proost, PhD
   <ul class="cv_list">
 	{% for s in site.data.software %}
 		<div class="row">
-		<div class="col-lg-3 col-md-3 col-sm-4 hidden-xs"></div>
-		<div class="col-lg-9 col-md-9 col-sm-8"><strong>{{ s.name }}</strong> : {{ s.description }} <a href="{{ s.url }}" class="badge">url</a></div>
+			<div class="timeline col-lg-3 col-md-3 col-sm-4  hidden-xs" data-min={{ site.timeline_start }} data-max={{ site.timeline_stop }} data-value={{ s.year }}></div>
+			<div class="col-lg-9 col-md-9 col-sm-8"><strong>{{ s.name }}</strong> : {{ s.description }} <a href="{{ s.url }}" class="badge">url</a></div>
 		</div>
+	{% endfor %}
+  </ul>
+</div>
+
+
+<div id="publications">
+  <h1>Publications <small>(<span class="toggle-button">Show more...</span>)</small></h1>
+  {% include citations.html %}
+  <ul class="cv_list">
+	{% for p in site.data.publications %}
+		{% if p.Selected == "1" %}
+		  <li>
+		{% else %}
+		  <li class="toggle toggle-off">	
+		{% endif %}
+			{% include paper.html p=p %}
+		  </li> 
 	{% endfor %}
   </ul>
 </div>
@@ -90,20 +105,4 @@ title: CV Sebastian Proost, PhD
 	{% for ga in site.data.grants_awards %}
 		{% include grants_awards.html ga=ga %}
  	{% endfor %}
-</div>
-
-<div id="publications">
-  <h1>Publications <small>(<span class="toggle-button">Show more...</span>)</small></h1>
-  {% include citations.html %}
-  <ul class="cv_list">
-	{% for p in site.data.publications %}
-		{% if p.Selected == "1" %}
-		  <li>
-		{% else %}
-		  <li class="toggle toggle-off">	
-		{% endif %}
-			{% include paper.html p=p %}
-		  </li> 
-	{% endfor %}
-  </ul>
 </div>
