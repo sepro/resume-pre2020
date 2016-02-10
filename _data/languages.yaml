@@ -1,0 +1,12 @@
+- language: Dutch
+  level: Mothertongue
+  
+- language: English
+  level: Fluent
+
+- language: German
+  level: intermediate
+  comment: "CEFR level: B2/1"
+  
+- language: French
+  level: intermediate

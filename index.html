@@ -2,6 +2,23 @@
 layout: default
 title: CV Sebastian Proost, PhD
 ---
+<div id="experience">
+  <h1>Experience</h1>
+  <ul class="cv_list">
+	{% for e in site.data.experience %}
+		{% include exp_edu.html e=e %}
+	{% endfor %}
+  </ul>
+</div>
+
+<div id="education">
+  <h1>Education</h1>
+  <ul class="cv_list">
+	{% for e in site.data.education %}
+		{% include exp_edu.html e=e %}
+	{% endfor %}
+  </ul>
+</div>
 
 <div id="training">
   <h1>Training <small>(<span class="toggle-button">Show more...</span>)</small></h1>

@@ -1,0 +1,13 @@
+<div class="row">
+	<div class="timerange col-lg-3 col-md-3 col-sm-4  hidden-xs" data-min={{ site.timeline_start }} data-max={{ site.timeline_stop }} data-start={{ e.start }} data-stop={{ e.stop }}></div>
+	<div class="col-lg-9 col-md-9 col-sm-8">
+		<p><strong>{{ e.name }}</strong>, {{ e.institute }}, {{ e.place }}</p>
+		{% if e.extra %}
+		<p>
+			{% for ex in e.extra %}
+			<em>{{ ex }}</em><br />
+			{% endfor %}
+		</p>
+		{% endif%}
+	</div>
+</div>
