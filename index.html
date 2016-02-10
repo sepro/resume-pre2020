@@ -20,6 +20,18 @@ title: CV Sebastian Proost, PhD
   </ul>
 </div>
 
+<div id="software">
+  <h1>Software</h1>
+  <ul class="cv_list">
+	{% for s in site.data.software %}
+		<div class="row">
+		<div class="col-lg-3 col-md-3 col-sm-4 hidden-xs"></div>
+		<div class="col-lg-9 col-md-9 col-sm-8"><strong>{{ s.name }}</strong> : {{ s.description }} <a href="{{ s.url }}" class="badge">url</a></div>
+		</div>
+	{% endfor %}
+  </ul>
+</div>
+
 <div id="training">
   <h1>Training <small>(<span class="toggle-button">Show more...</span>)</small></h1>
   <ul class="cv_list">

@@ -1,0 +1,15 @@
+- name: PLAZA
+  description: Online comparative genomics platform
+  url: http://bioinformatics.psb.ugent.be/plaza/
+  
+- name: Trapid
+  description: Online transcript annotation and phylogeny tool
+  url: http://bioinformatics.psb.ugent.be/webtools/trapid/
+  
+- name: i-ADHoRe
+  description: Software to detect genomic homology
+  url: http://bioinformatics.psb.ugent.be/software/details/i--ADHoRe3.0
+  
+- name: Plasmid DB
+  description: Lab Management software
+  url: http://sepro.github.io/plasmid-db-overview/
