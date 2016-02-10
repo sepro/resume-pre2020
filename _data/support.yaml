@@ -1,0 +1,31 @@
+- course: Functional Plant Genomics
+  teacher: Dr. Pierre Hilson
+  place: Ghent, Belgium
+  start: 2011
+  stop: 2012
+  role: "Guest Lecture: Introduction: Comparative Genomics Using the PLAZA Platform"
+
+- student: Christopher Scheerlinck
+  start: 2009
+  stop: 2010
+  studies: "Master in Industrial Engineering: Informatics, HoGent"
+  topic: Integration and visualization of evolutionary genomics data within an online comparative genomics platform
+  
+- student: Steven Timmermans  
+  start: 2009
+  stop: 2010 
+  studies: 1st Master in Biochemistry and Biotechnology, UGent
+  topic: Homology identification through sequence similarity clustering of multidomain proteins
+  
+- course: Comparative Genomics
+  teacher: Prof. Dr. Klaas Vandepoele
+  place: Ghent, Belgium
+  start: 2009
+  stop: 2012
+  role: "Assisted practical courses"
+  
+- student: Marieke Dubois
+  start: 2008
+  stop: 2009
+  studies: 1st Master in Biochemistry and Biotechnology, UGent
+  topic: Analysis of pseudogenes in Arabidopsis thaliana

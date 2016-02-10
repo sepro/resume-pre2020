@@ -1,0 +1,10 @@
+<div class="row">
+	<div class="timerange col-lg-3 col-md-3 col-sm-4  hidden-xs" data-min={{ site.timeline_start }} data-max={{ site.timeline_stop }} data-start={{ s.start }} data-stop={{ s.stop }}></div>
+	<div class="col-lg-9 col-md-9 col-sm-8">
+		{% if s.student %}
+		<p><strong>{{ s.student }}</strong>, {{ s.studies }}, <em>{{ s.topic }}</em></p>
+		{% else%}
+		<p><strong>{{ s.course }}</strong> <em>(by {{ s.teacher }})</em>, {{ s.place }}, <em>{{ s.role }}</em></p>
+		{% endif%}
+	</div>
+</div>

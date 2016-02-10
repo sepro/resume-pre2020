@@ -1,0 +1,17 @@
+<div class="row">
+	{% if ga.grant %}
+		<div class="timerange col-lg-3 col-md-3 col-sm-4  hidden-xs" data-min={{ site.timeline_start }} data-max={{ site.timeline_stop }} data-start={{ ga.start }} data-stop={{ ga.stop }}></div>
+		<div class="col-lg-9 col-md-9 col-sm-8">
+		<p><strong>{{ ga.grant }}</strong>, {{ ga.description }}</p>
+		</div>
+	{% else%}
+		<div class="timeline col-lg-3 col-md-3 col-sm-4  hidden-xs" data-min={{ site.timeline_start }} data-max={{ site.timeline_stop }} data-value={{ ga.year }}></div>
+		<div class="col-lg-9 col-md-9 col-sm-8">
+		<p><strong>{{ ga.award }}</strong> - <strong>{{ ga.rank }}</strong>
+			{% if ga.description %}
+				<em>{{ ga.description }}</em>
+			{%endif%}
+		</p>
+		</div>
+	{% endif%}
+</div>

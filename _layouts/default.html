@@ -27,11 +27,13 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-		    <li><a href="#experience">Experience</a></li>
-		    <li><a href="#education">Education</a></li>
-		    <li><a href="#training">Training</a></li>
-			<li><a href="#conferences">Conferences</a></li>
-            <li><a href="#publications">Publications</a></li>
+		    <li><a class="page-scroll" href="#experience">Experience</a></li>
+		    <li><a class="page-scroll" href="#education">Education</a></li>
+		    <li><a class="page-scroll" href="#training">Training</a></li>
+			<li><a class="page-scroll" href="#conferences">Conferences</a></li>
+			<li><a class="page-scroll" href="#support">Educational support</a></li>
+			<li><a class="page-scroll" href="#grants-awards">Grants/Awards</a></li>
+            <li><a class="page-scroll" href="#publications">Publications</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -47,20 +49,23 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/pablo.min.js"></script>
 	<script src="js/timelines.js"></script>
+	<script src="js/jquery.easing.min.js"></script>
 	<script>
 		$(document).ready(function(){
-			$('a[href^="#"]').on('click',function (e) {
-				e.preventDefault();
-
-				var target = this.hash;
-				var $target = $(target);
-
+			// jQuery for page scrolling feature - requires jQuery Easing plugin
+			$('a.page-scroll').bind('click', function(event) {
+				var $anchor = $(this);
 				$('html, body').stop().animate({
-					'scrollTop': -70 + $target.offset().top
-				}, 900, 'swing', function () {
-					window.location.hash = target;
-				});
+					scrollTop: ($($anchor.attr('href')).offset().top - 70)
+				}, 900, 'easeInOutExpo');
+				event.preventDefault();
 			});
+
+			// Highlight the top nav as scrolling occurs
+			$('body').scrollspy({
+				target: '.navbar-fixed-top',
+				offset: 71
+			})
 			$('.toggle-button').on('click',function (e) {
 				e.preventDefault();
 				

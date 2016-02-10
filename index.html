@@ -50,6 +50,20 @@ title: CV Sebastian Proost, PhD
   </ul>
 </div>
 
+<div id="support">
+  <h1>Educational support</h1>
+	{% for s in site.data.support %}
+		{% include support.html s=s %}
+ 	{% endfor %}
+</div>
+
+<div id="grants-awards">
+  <h1>Grants and Awards</h1>
+	{% for ga in site.data.grants_awards %}
+		{% include grants_awards.html ga=ga %}
+ 	{% endfor %}
+</div>
+
 <div id="publications">
   <h1>Publications <small>(<span class="toggle-button">Show more...</span>)</small></h1>
   {% include citations.html %}
