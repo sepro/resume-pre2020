@@ -53,6 +53,11 @@ ul.header-list
 	padding: 0px;
 }
 
+ul.header-list> li >a
+{
+    color:#CCC
+}
+
 /*****************************************************************************/
 /*
 /* Publications
