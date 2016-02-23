@@ -2,7 +2,7 @@
 layout: default
 title: CV Sebastian Proost, PhD
 ---
-<div id="header">
+<section id="header">
 	<div class="row">
 	<div class="col-sm-3"><img class="profile" src="img/sepro_bw_small.jpg"/></div>
 	<div class="col-sm-9"><h1 class="name">Sebastian Proost, PhD</h1><h2>Bioinformatician, data analyst and web developer</h2>
@@ -14,9 +14,9 @@ title: CV Sebastian Proost, PhD
 		</ul>
 	</div>
 	</div>
-</div>
+</section>
 <hr />
-<div id="experience">
+<section id="experience">
 <div class="row">
 	<div class="timelegend col-lg-3 col-md-3 col-sm-4  hidden-xs" data-min={{ site.timeline_start }} data-max={{ site.timeline_stop }}></div>
     <div class="col-lg-9 col-md-9 col-sm-8"><h1>Experience</h1></div>
@@ -26,19 +26,25 @@ title: CV Sebastian Proost, PhD
 		{% include exp_edu.html e=e %}
 	{% endfor %}
   </ul>
-</div>
+</section>
 
-<div id="education">
-  <h1>Education</h1>
+<section id="education">
+<div class="row">
+	<div class="timelegend col-lg-3 col-md-3 col-sm-4  hidden-xs" data-min={{ site.timeline_start }} data-max={{ site.timeline_stop }}></div>
+    <div class="col-lg-9 col-md-9 col-sm-8"><h1>Education</h1></div>
+</div>
   <ul class="cv_list">
 	{% for e in site.data.education %}
 		{% include exp_edu.html e=e %}
 	{% endfor %}
   </ul>
-</div>
+</section>
 
-<div id="software">
-  <h1>Software</h1>
+<section id="software">
+<div class="row">
+	<div class="timelegend col-lg-3 col-md-3 col-sm-4  hidden-xs" data-min={{ site.timeline_start }} data-max={{ site.timeline_stop }}></div>
+    <div class="col-lg-9 col-md-9 col-sm-8"><h1>Software</h1></div>
+</div>
   <ul class="cv_list">
 	{% for s in site.data.software %}
 		<div class="row">
@@ -47,11 +53,14 @@ title: CV Sebastian Proost, PhD
 		</div>
 	{% endfor %}
   </ul>
+</section>
+
+
+<section id="publications">
+<div class="row">
+	<div class="timelegend col-lg-3 col-md-3 col-sm-4  hidden-xs" data-min={{ site.timeline_start }} data-max={{ site.timeline_stop }}></div>
+    <div class="col-lg-9 col-md-9 col-sm-8"><h1>Publications <small>(<span class="toggle-button">Show more...</span>)</small></h1></div>
 </div>
-
-
-<div id="publications">
-  <h1>Publications <small>(<span class="toggle-button">Show more...</span>)</small></h1>
   {% include citations.html %}
   <ul class="cv_list">
 	{% for p in site.data.publications %}
@@ -64,10 +73,14 @@ title: CV Sebastian Proost, PhD
 		  </li> 
 	{% endfor %}
   </ul>
-</div>
+</section>
 
-<div id="training">
-  <h1>Training <small>(<span class="toggle-button">Show more...</span>)</small></h1>
+<section id="training">
+<div class="row">
+	<div class="timelegend col-lg-3 col-md-3 col-sm-4  hidden-xs" data-min={{ site.timeline_start }} data-max={{ site.timeline_stop }}></div>
+    <div class="col-lg-9 col-md-9 col-sm-8"><h1>Training <small>(<span class="toggle-button">Show more...</span>)</small></h1></div>
+</div>
+  
   <ul class="cv_list">
 	{% for t in site.data.training %}
 		{% if t.Selected == "1" %}
@@ -79,10 +92,14 @@ title: CV Sebastian Proost, PhD
 		  </li>
 	{% endfor %}
   </ul>
-</div>
+</section>
 
-<div id="conferences">
-  <h1>Conferences <small>(<span class="toggle-button">Show more...</span>)</small></h1>
+<section id="conferences">
+<div class="row">
+	<div class="timelegend col-lg-3 col-md-3 col-sm-4  hidden-xs" data-min={{ site.timeline_start }} data-max={{ site.timeline_stop }}></div>
+    <div class="col-lg-9 col-md-9 col-sm-8"><h1>Conferences <small>(<span class="toggle-button">Show more...</span>)</small></h1></div>
+</div>
+  
   <ul class="cv_list">
 	{% for c in site.data.conferences %}
 		{% if c.Selected == "1" %}
@@ -94,25 +111,35 @@ title: CV Sebastian Proost, PhD
 		  </li>
  	{% endfor %}
   </ul>
-</div>
+</section>
 
-<div id="support">
-  <h1>Educational support</h1>
+<section id="support">
+<div class="row">
+	<div class="timelegend col-lg-3 col-md-3 col-sm-4  hidden-xs" data-min={{ site.timeline_start }} data-max={{ site.timeline_stop }}></div>
+    <div class="col-lg-9 col-md-9 col-sm-8"><h1>Educational support</h1></div>
+</div>
 	{% for s in site.data.support %}
 		{% include support.html s=s %}
  	{% endfor %}
+</section>
+
+<section id="grants-awards">
+<div class="row">
+	<div class="timelegend col-lg-3 col-md-3 col-sm-4  hidden-xs" data-min={{ site.timeline_start }} data-max={{ site.timeline_stop }}></div>
+    <div class="col-lg-9 col-md-9 col-sm-8"><h1>Grants and Awards</h1></div>
 </div>
 
-<div id="grants-awards">
-  <h1>Grants and Awards</h1>
 	{% for ga in site.data.grants_awards %}
 		{% include grants_awards.html ga=ga %}
  	{% endfor %}
-</div>
+</section>
 
-<div id="languages">
-  <h1>Languages</h1>
+<section id="languages">
+<div class="row">
+	<div class="col-lg-3 col-md-3 col-sm-4  hidden-xs"></div>
+    <div class="col-lg-9 col-md-9 col-sm-8"><h1>Languages</h1></div>
+</div>
 	{% for l in site.data.languages %}
 		{% include language.html l=l %}
  	{% endfor %}
-</div>
+</section>

@@ -76,7 +76,7 @@
 			$('.toggle-button').on('click',function (e) {
 				e.preventDefault();
 				
-				$(this).closest('div').find('li.toggle').toggle();
+				$(this).closest('section').find('li.toggle').toggle();
 				
 				if ($(this).text() !== "Show less...") {
 					$(this).text("Show less...");
