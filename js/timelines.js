@@ -84,14 +84,16 @@
                     'stroke-width': 0.75})
 				
 				// tick
-				svg.line({  
-					x1:5+step,
-                    y1:timeline_height-8,
-                    x2:5+step,
-                    y2:timeline_height-3,
-                    stroke: '#BBB',
-                    'stroke-width': 0.75})					
-				
+				for (i = 1; i<(dataMax - dataMin); i++) {
+					svg.line({  
+						x1:5+step*i,
+						y1:timeline_height-8,
+						x2:5+step*i,
+						y2:timeline_height-3,
+						stroke: '#BBB',
+						'stroke-width': 0.75})					
+				}
+				// label
 
 			});
 		});
