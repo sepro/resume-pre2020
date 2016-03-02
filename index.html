@@ -61,7 +61,10 @@ title: CV Sebastian Proost, PhD
 	<div class="timelegend col-lg-3 col-md-3 col-sm-4  hidden-xs" data-min={{ site.timeline_start }} data-max={{ site.timeline_stop }}></div>
     <div class="col-lg-9 col-md-9 col-sm-8"><h1>Publications <small>(<span class="toggle-button">Show more...</span>)</small></h1></div>
 </div>
-  {% include citations.html %}
+<div class="row">
+	<div class="col-lg-3 col-md-3 col-sm-4  hidden-xs"></div>
+    <div class="col-lg-9 col-md-9 col-sm-8">{% include citations.html %}</div>
+</div>
   <ul class="cv_list">
 	{% for p in site.data.publications %}
 		{% if p.Selected == "1" %}
