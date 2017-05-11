@@ -78,3 +78,17 @@ strong.author {
     margin-bottom: 10px;	
 }
 
+/*****************************************************************************/
+/*
+/* Tooltips
+/*
+/*****************************************************************************/
+
+.tooltiptext{
+    display: none;
+}
+
+.tooltipped{
+  border-bottom: 1px dashed #999;
+  display: inline;
+}

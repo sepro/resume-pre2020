@@ -8,6 +8,7 @@
 
         <link rel="stylesheet" href="/css/bootstrap.min.css">
 		<link rel="stylesheet" href="/css/font-awesome.min.css">
+		<link rel="stylesheet" href="/css/jquery.qtip.min.css">
 		
         <!-- Custom CSS -->
         <link rel="stylesheet" href="/css/main.css">
@@ -57,6 +58,7 @@
 	<script src="js/pablo.min.js"></script>
 	<script src="js/timelines.js"></script>
 	<script src="js/jquery.easing.min.js"></script>
+	<script src="js/jquery.qtip.min.js"></script>
 	<script>
 		$(document).ready(function(){
 			// jQuery for page scrolling feature - requires jQuery Easing plugin
@@ -68,6 +70,21 @@
 				event.preventDefault();
 			});
 
+			$('span.tooltipped').each(function() {
+				$(this).qtip({
+				    style: {
+						classes: 'qtip-bootstrap'
+					},
+					content: {
+						text: $(this).next('.tooltiptext')
+					},
+					hide: {
+						fixed: true,
+						delay: 300
+					}
+				});
+			});
+			
 			// Highlight the top nav as scrolling occurs
 			$('body').scrollspy({
 				target: '.navbar-fixed-top',
