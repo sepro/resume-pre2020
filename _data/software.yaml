@@ -1,3 +1,8 @@
+- name: LSTrAP 
+  description: Large-Scale Transcriptomics Analysis Pipeline
+  url: https://github.molgen.mpg.de/proost/LSTrAP
+  year: 2017
+
 - name: EvoRepro 
   description: Project page
   url: http://www.evorepro.org/
