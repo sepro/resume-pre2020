@@ -1,11 +1,3 @@
-- name: CoNekT 
-  description: Co-Expression Network Toolkit
-  url: https://github.molgen.mpg.de/proost/CoNekT
-  year: 2018
-- name: PhytoNet 
-  description: Comparative co-expression network analyses across phytoplankton and land plants
-  url: http://www.gene2function.de
-  year: 2018
 - name: LSTrAP 
   description: Large-Scale Transcriptomics Analysis Pipeline
   url: https://github.molgen.mpg.de/proost/LSTrAP
