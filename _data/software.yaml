@@ -1,6 +1,6 @@
 - name: CoNekT 
   description: Co-Expression Network Toolkit
-  url: https://github.molgen.mpg.de/proost/CoNekT
+  url: https://github.com/sepro/CoNekT
   year: 2018
   
 - name: PhytoNet 
@@ -10,7 +10,7 @@
   
 - name: LSTrAP 
   description: Large-Scale Transcriptomics Analysis Pipeline
-  url: https://github.molgen.mpg.de/proost/LSTrAP
+  url: https://github.com/sepro/LSTrAP
   year: 2017
 
 - name: EvoRepro 
