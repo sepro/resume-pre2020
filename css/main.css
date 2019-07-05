@@ -36,9 +36,8 @@ ul.cv_list > li.toggle-on {
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-    -moz-box-shadow: inset 0 -10px 10px -10px #e68a00;
-    -webkit-box-shadow: inset 0 -10px 10px -10px #e68a00;
-    box-shadow: inset 0 -10px 10px -10px #e68a00;
+	border-bottom: 5px solid orange;
+	padding-bottom: 10px;
 }
 
 .profile {
