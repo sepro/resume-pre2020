@@ -36,7 +36,7 @@ ul.cv_list > li.toggle-on {
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-	border-bottom: 5px solid orange;
+	border-bottom: 5px solid #e68a00;
 	padding-bottom: 10px;
 }
 
