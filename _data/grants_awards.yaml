@@ -21,8 +21,13 @@
 - grant: IWT Personal Fellowship
   description: Funding from Flemish government to support doctoral research
   start: 2007
-  stop: 2009 
-  
+  stop: 2009
+
+- award: Speculaas van de Maand
+  rank:
+  description: Award from the city council of Hasselt
+  year: 2003
+
 - award: International Biology Olympiad
   rank: Bronze Medal
   description: Minsk, Belarus
