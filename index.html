@@ -78,6 +78,21 @@ title: CV Sebastian Proost, PhD
   </ul>
 </section>
 
+<section id="media">
+<div class="row">
+	<div class="timelegend col-lg-3 col-md-3 col-sm-4  hidden-xs" data-min={{ site.timeline_start }} data-max={{ site.timeline_stop }}></div>
+    <div class="col-lg-9 col-md-9 col-sm-8"><h1>Media</h1></div>
+</div>
+
+  <ul class="cv_list">
+	{% for m in site.data.media %}
+		  <li>
+				{% include media.html m=m %}
+		  </li>
+	{% endfor %}
+  </ul>
+</section>
+
 <section id="training">
 <div class="row">
 	<div class="timelegend col-lg-3 col-md-3 col-sm-4  hidden-xs" data-min={{ site.timeline_start }} data-max={{ site.timeline_stop }}></div>

@@ -92,3 +92,11 @@ strong.author {
   border-bottom: 1px dashed #999;
   display: inline;
 }
+
+.media-link {
+    color:#e68a00
+}
+
+.media-link:hover {
+    color:#d67a00
+}
