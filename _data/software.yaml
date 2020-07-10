@@ -15,7 +15,7 @@
 
 - name: Plasmid DB
   description: Lab Management software
-  url: http://sepro.github.io/plasmid-db-overview/
+  url: http://sebastian.proost.science/plasmid-db/
   year: 2015
 
 - name: PLAZA
