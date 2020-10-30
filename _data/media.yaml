@@ -1,3 +1,11 @@
+- medium: "Pint of Science"
+  year: 2020
+  title: "Bytes & Bacteria"
+  icon: fa-video-camera
+  description: "Streamed presentation for Pint of Science"
+  type: embedded
+  data: <iframe width="956" height="538" src="https://www.youtube.com/embed/iSgKLZ257SI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 - medium: "Talk Python To Me"
   title: "A gut feeling about Python"
   year: 2019
