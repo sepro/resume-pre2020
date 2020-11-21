@@ -6,14 +6,14 @@
         <title>{{ page.title }}</title>
         <meta name="viewport" content="width=device-width">
 
-        <link rel="stylesheet" href="/css/bootstrap.min.css">
-		<link rel="stylesheet" href="/css/font-awesome.min.css">
-		<link rel="stylesheet" href="/css/jquery.qtip.min.css">
-        <link rel="stylesheet" href="/css/featherlight.min.css">
-		<link rel="stylesheet" href="/css/featherlight.gallery.min.css">
+        <link rel="stylesheet" href="{{ page.path_prefix }}/css/bootstrap.min.css">
+		<link rel="stylesheet" href="{{ page.path_prefix }}/css/font-awesome.min.css">
+		<link rel="stylesheet" href="{{ page.path_prefix }}/css/jquery.qtip.min.css">
+        <link rel="stylesheet" href="{{ page.path_prefix }}/css/featherlight.min.css">
+		<link rel="stylesheet" href="{{ page.path_prefix }}/css/featherlight.gallery.min.css">
 
         <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="{{ page.path_prefix }}/css/main.css">
     </head>
     <body>
     <!-- Fixed navbar -->
@@ -55,14 +55,14 @@
 
 
         </div> <!--/.container -->
-	<script src="js/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/pablo.min.js"></script>
-	<script src="js/timelines.js"></script>
-	<script src="js/jquery.easing.min.js"></script>
-	<script src="js/jquery.qtip.min.js"></script>
-    <script src="js/featherlight.min.js"></script>
-    <script src="js/featherlight.gallery.min.js"></script>
+	<script src="{{ page.path_prefix }}/js/jquery.min.js"></script>
+	<script src="{{ page.path_prefix }}/js/bootstrap.min.js"></script>
+	<script src="{{ page.path_prefix }}/js/pablo.min.js"></script>
+	<script src="{{ page.path_prefix }}/js/timelines.js"></script>
+	<script src="{{ page.path_prefix }}/js/jquery.easing.min.js"></script>
+	<script src="{{ page.path_prefix }}/js/jquery.qtip.min.js"></script>
+    <script src="{{ page.path_prefix }}/js/featherlight.min.js"></script>
+    <script src="{{ page.path_prefix }}/js/featherlight.gallery.min.js"></script>
 	<script>
 		$(document).ready(function(){
 			// jQuery for page scrolling feature - requires jQuery Easing plugin

@@ -1,4 +1,5 @@
 name: Sebastian Proost
+path_prefix: /resume-pre2020
 markdown: redcarpet
 highlighter: rouge
 encoding: utf-8
